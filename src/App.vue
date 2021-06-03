@@ -2,7 +2,7 @@
   <div class="row py-2 border-bottom bg-info text-white px-5">
     <div class="col-6 d-flex align-items-center">
       <img
-        src="./assets/slaycer.png"
+        src="./assets/slaycer.webp"
         width="70"
         height="70"
         class="rounded-circle"
