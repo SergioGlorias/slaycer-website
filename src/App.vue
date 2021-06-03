@@ -1,30 +1,38 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="row py-2 border-bottom bg-info text-white px-5">
+    <div class="col-6 d-flex align-items-center">
+      <img
+        src="./assets/slaycer.png"
+        width="70"
+        height="70"
+        class="rounded-circle"
+      />
+      <h1 class="title fs-1 mx-2" id="nome">{{ botName }}</h1>
+    </div>
+    <div class="col-6 d-flex align-items-center justify-content-end">
+      <div id="nav" class="fs-3 btn-group" role="group">
+        <router-link class="btn btn-outline-primary " to="/">Homepage</router-link>
+        <router-link class="btn btn-outline-primary " to="/about">Sobre</router-link>
+      </div>
+    </div>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
+<script>
+
+export default {
+  data() {
+    return {
+      botName: "Slaycer"
+    }
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.title {
+  font-family: "Lobster", cursive;
 }
 </style>
